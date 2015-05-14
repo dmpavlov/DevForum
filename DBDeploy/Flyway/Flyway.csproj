@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{614EF5C6-47D1-4023-8A01-0A2FFEAB78EF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Flyway</RootNamespace>
+    <AssemblyName>Flyway</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="flyway-3.2.1\conf\flyway.conf" />
+    <None Include="flyway-3.2.1\flyway" />
+    <None Include="flyway-3.2.1\flyway.cmd" />
+    <None Include="flyway-3.2.1\jre\COPYRIGHT" />
+    <None Include="flyway-3.2.1\jre\lib\accessibility.properties" />
+    <None Include="flyway-3.2.1\jre\lib\amd64\jvm.cfg" />
+    <None Include="flyway-3.2.1\jre\lib\calendars.properties" />
+    <None Include="flyway-3.2.1\jre\lib\classlist" />
+    <None Include="flyway-3.2.1\jre\lib\cmm\CIEXYZ.pf" />
+    <None Include="flyway-3.2.1\jre\lib\cmm\GRAY.pf" />
+    <None Include="flyway-3.2.1\jre\lib\cmm\LINEAR_RGB.pf" />
+    <None Include="flyway-3.2.1\jre\lib\cmm\PYCC.pf" />
+    <None Include="flyway-3.2.1\jre\lib\cmm\sRGB.pf" />
+    <None Include="flyway-3.2.1\jre\lib\content-types.properties" />
+    <None Include="flyway-3.2.1\jre\lib\currency.data" />
+    <None Include="flyway-3.2.1\jre\lib\ext\meta-index" />
+    <None Include="flyway-3.2.1\jre\lib\flavormap.properties" />
+    <None Include="flyway-3.2.1\jre\lib\fontconfig.bfc" />
+    <None Include="flyway-3.2.1\jre\lib\fontconfig.properties.src" />
+    <None Include="flyway-3.2.1\jre\lib\fonts\LucidaBrightDemiBold.ttf" />
+    <None Include="flyway-3.2.1\jre\lib\fonts\LucidaBrightDemiItalic.ttf" />
+    <None Include="flyway-3.2.1\jre\lib\fonts\LucidaBrightItalic.ttf" />
+    <None Include="flyway-3.2.1\jre\lib\fonts\LucidaBrightRegular.ttf" />
+    <None Include="flyway-3.2.1\jre\lib\fonts\LucidaSansDemiBold.ttf" />
+    <None Include="flyway-3.2.1\jre\lib\fonts\LucidaSansRegular.ttf" />
+    <None Include="flyway-3.2.1\jre\lib\fonts\LucidaTypewriterBold.ttf" />
+    <None Include="flyway-3.2.1\jre\lib\fonts\LucidaTypewriterRegular.ttf" />
+    <None Include="flyway-3.2.1\jre\lib\hijrah-config-umalqura.properties" />
+    <None Include="flyway-3.2.1\jre\lib\images\cursors\cursors.properties" />
+    <None Include="flyway-3.2.1\jre\lib\jfr\default.jfc" />
+    <None Include="flyway-3.2.1\jre\lib\jfr\profile.jfc" />
+    <None Include="flyway-3.2.1\jre\lib\logging.properties" />
+    <None Include="flyway-3.2.1\jre\lib\management\jmxremote.access" />
+    <None Include="flyway-3.2.1\jre\lib\management\jmxremote.password.template" />
+    <None Include="flyway-3.2.1\jre\lib\management\management.properties" />
+    <None Include="flyway-3.2.1\jre\lib\management\snmp.acl.template" />
+    <None Include="flyway-3.2.1\jre\lib\meta-index" />
+    <None Include="flyway-3.2.1\jre\lib\net.properties" />
+    <None Include="flyway-3.2.1\jre\lib\psfont.properties.ja" />
+    <None Include="flyway-3.2.1\jre\lib\psfontj2d.properties" />
+    <None Include="flyway-3.2.1\jre\lib\security\blacklist" />
+    <None Include="flyway-3.2.1\jre\lib\security\blacklisted.certs" />
+    <None Include="flyway-3.2.1\jre\lib\security\cacerts" />
+    <None Include="flyway-3.2.1\jre\lib\security\java.policy" />
+    <None Include="flyway-3.2.1\jre\lib\security\java.security" />
+    <None Include="flyway-3.2.1\jre\lib\security\trusted.libraries" />
+    <None Include="flyway-3.2.1\jre\lib\sound.properties" />
+    <None Include="flyway-3.2.1\jre\lib\tzdb.dat" />
+    <None Include="flyway-3.2.1\jre\lib\tzmappings" />
+    <None Include="flyway-3.2.1\jre\LICENSE" />
+    <Content Include="flyway-3.2.1\sql\afterMigrate.sql" />
+    <Content Include="flyway-3.2.1\sql\V1.0.001__Create Topics.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="flyway-3.2.1\drivers\derby-10.11.1.1.jar" />
+    <Content Include="flyway-3.2.1\drivers\derbyclient-10.11.1.1.jar" />
+    <Content Include="flyway-3.2.1\drivers\h2-1.3.170.jar" />
+    <Content Include="flyway-3.2.1\drivers\hsqldb-2.3.2.jar" />
+    <Content Include="flyway-3.2.1\drivers\jna-3.3.0-platform.jar" />
+    <Content Include="flyway-3.2.1\drivers\jna-3.3.0.jar" />
+    <Content Include="flyway-3.2.1\drivers\jtds-1.3.1.jar" />
+    <Content Include="flyway-3.2.1\drivers\mariadb-java-client-1.1.7.jar" />
+    <Content Include="flyway-3.2.1\drivers\postgresql-9.3-1102-jdbc4.jar" />
+    <Content Include="flyway-3.2.1\drivers\put-your-jdbc-drivers-here.txt" />
+    <Content Include="flyway-3.2.1\drivers\sqlite-jdbc-3.7.15-M1.jar" />
+    <Content Include="flyway-3.2.1\jars\put-your-java-migration-jars-here.txt" />
+    <Content Include="flyway-3.2.1\jre\bin\attach.dll" />
+    <Content Include="flyway-3.2.1\jre\bin\awt.dll" />
+    <Content Include="flyway-3.2.1\jre\bin\dcpr.dll" />
+    <Content Include="flyway-3.2.1\jre\bin\dt_shmem.dll" />
+    <Content Include="flyway-3.2.1\jre\bin\dt_socket.dll" />
+    <Content Include="flyway-3.2.1\jre\bin\fontmanager.dll" />
+    <Content Include="flyway-3.2.1\jre\bin\hprof.dll" />
+    <Content Include="flyway-3.2.1\jre\bin\instrument.dll" />
+    <Content Include="flyway-3.2.1\jre\bin\j2pcsc.dll" />
+    <Content Include="flyway-3.2.1\jre\bin\j2pkcs11.dll" />
+    <Content Include="flyway-3.2.1\jre\bin\jaas_nt.dll" />
+    <Content Include="flyway-3.2.1\jre\bin\jabswitch.exe" />
+    <Content Include="flyway-3.2.1\jre\bin\java-rmi.exe" />
+    <Content Include="flyway-3.2.1\jre\bin\java.dll" />
+    <Content Include="flyway-3.2.1\jre\bin\java.exe" />
+    <Content Include="flyway-3.2.1\jre\bin\javaw.exe" />
+    <Content Include="flyway-3.2.1\jre\bin\java_crw_demo.dll" />
+    <Content Include="flyway-3.2.1\jre\bin\jawt.dll" />
+    <Content Include="flyway-3.2.1\jre\bin\jdwp.dll" />
+    <Content Include="flyway-3.2.1\jre\bin\jfr.dll" />
+    <Content Include="flyway-3.2.1\jre\bin\jjs.exe" />
+    <Content Include="flyway-3.2.1\jre\bin\jli.dll" />
+    <Content Include="flyway-3.2.1\jre\bin\jpeg.dll" />
+    <Content Include="flyway-3.2.1\jre\bin\jsdt.dll" />
+    <Content Include="flyway-3.2.1\jre\bin\jsound.dll" />
+    <Content Include="flyway-3.2.1\jre\bin\jsoundds.dll" />
+    <Content Include="flyway-3.2.1\jre\bin\kcms.dll" />
+    <Content Include="flyway-3.2.1\jre\bin\keytool.exe" />
+    <Content Include="flyway-3.2.1\jre\bin\kinit.exe" />
+    <Content Include="flyway-3.2.1\jre\bin\klist.exe" />
+    <Content Include="flyway-3.2.1\jre\bin\ktab.exe" />
+    <Content Include="flyway-3.2.1\jre\bin\lcms.dll" />
+    <Content Include="flyway-3.2.1\jre\bin\management.dll" />
+    <Content Include="flyway-3.2.1\jre\bin\mlib_image.dll" />
+    <Content Include="flyway-3.2.1\jre\bin\msvcr100.dll" />
+    <Content Include="flyway-3.2.1\jre\bin\net.dll" />
+    <Content Include="flyway-3.2.1\jre\bin\nio.dll" />
+    <Content Include="flyway-3.2.1\jre\bin\npt.dll" />
+    <Content Include="flyway-3.2.1\jre\bin\ntlmauth.dll" />
+    <Content Include="flyway-3.2.1\jre\bin\orbd.exe" />
+    <Content Include="flyway-3.2.1\jre\bin\pack200.exe" />
+    <Content Include="flyway-3.2.1\jre\bin\policytool.exe" />
+    <Content Include="flyway-3.2.1\jre\bin\rmid.exe" />
+    <Content Include="flyway-3.2.1\jre\bin\rmiregistry.exe" />
+    <Content Include="flyway-3.2.1\jre\bin\sawindbg.dll" />
+    <Content Include="flyway-3.2.1\jre\bin\servertool.exe" />
+    <Content Include="flyway-3.2.1\jre\bin\server\jvm.dll" />
+    <Content Include="flyway-3.2.1\jre\bin\server\Xusage.txt" />
+    <Content Include="flyway-3.2.1\jre\bin\splashscreen.dll" />
+    <Content Include="flyway-3.2.1\jre\bin\sunec.dll" />
+    <Content Include="flyway-3.2.1\jre\bin\sunmscapi.dll" />
+    <Content Include="flyway-3.2.1\jre\bin\t2k.dll" />
+    <Content Include="flyway-3.2.1\jre\bin\tnameserv.exe" />
+    <Content Include="flyway-3.2.1\jre\bin\unpack.dll" />
+    <Content Include="flyway-3.2.1\jre\bin\unpack200.exe" />
+    <Content Include="flyway-3.2.1\jre\bin\verify.dll" />
+    <Content Include="flyway-3.2.1\jre\bin\w2k_lsa_auth.dll" />
+    <Content Include="flyway-3.2.1\jre\bin\zip.dll" />
+    <Content Include="flyway-3.2.1\jre\lib\charsets.jar" />
+    <Content Include="flyway-3.2.1\jre\lib\ext\cldrdata.jar" />
+    <Content Include="flyway-3.2.1\jre\lib\ext\dnsns.jar" />
+    <Content Include="flyway-3.2.1\jre\lib\ext\localedata.jar" />
+    <Content Include="flyway-3.2.1\jre\lib\ext\nashorn.jar" />
+    <Content Include="flyway-3.2.1\jre\lib\ext\sunec.jar" />
+    <Content Include="flyway-3.2.1\jre\lib\ext\sunjce_provider.jar" />
+    <Content Include="flyway-3.2.1\jre\lib\ext\sunmscapi.jar" />
+    <Content Include="flyway-3.2.1\jre\lib\ext\sunpkcs11.jar" />
+    <Content Include="flyway-3.2.1\jre\lib\ext\zipfs.jar" />
+    <Content Include="flyway-3.2.1\jre\lib\images\cursors\invalid32x32.gif" />
+    <Content Include="flyway-3.2.1\jre\lib\images\cursors\win32_CopyDrop32x32.gif" />
+    <Content Include="flyway-3.2.1\jre\lib\images\cursors\win32_CopyNoDrop32x32.gif" />
+    <Content Include="flyway-3.2.1\jre\lib\images\cursors\win32_LinkDrop32x32.gif" />
+    <Content Include="flyway-3.2.1\jre\lib\images\cursors\win32_LinkNoDrop32x32.gif" />
+    <Content Include="flyway-3.2.1\jre\lib\images\cursors\win32_MoveDrop32x32.gif" />
+    <Content Include="flyway-3.2.1\jre\lib\images\cursors\win32_MoveNoDrop32x32.gif" />
+    <Content Include="flyway-3.2.1\jre\lib\jce.jar" />
+    <Content Include="flyway-3.2.1\jre\lib\jfr.jar" />
+    <Content Include="flyway-3.2.1\jre\lib\jsse.jar" />
+    <Content Include="flyway-3.2.1\jre\lib\jvm.hprof.txt" />
+    <Content Include="flyway-3.2.1\jre\lib\management-agent.jar" />
+    <Content Include="flyway-3.2.1\jre\lib\resources.jar" />
+    <Content Include="flyway-3.2.1\jre\lib\rt.jar" />
+    <Content Include="flyway-3.2.1\jre\lib\security\local_policy.jar" />
+    <Content Include="flyway-3.2.1\jre\lib\security\US_export_policy.jar" />
+    <Content Include="flyway-3.2.1\jre\README.txt" />
+    <Content Include="flyway-3.2.1\jre\THIRDPARTYLICENSEREADME.txt" />
+    <Content Include="flyway-3.2.1\jre\Welcome.html" />
+    <Content Include="flyway-3.2.1\lib\flyway-commandline-3.2.1.jar" />
+    <Content Include="flyway-3.2.1\lib\flyway-core-3.2.1.jar" />
+    <Content Include="flyway-3.2.1\LICENSE.txt" />
+    <Content Include="flyway-3.2.1\LICENSES-THIRD-PARTY.txt" />
+    <Content Include="flyway-3.2.1\README.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="flyway-3.2.1\jre\lib\applet\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

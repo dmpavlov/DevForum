@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5FF028DF-9E73-4165-B944-9E3908A8CA00}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SmartStepGroup</RootNamespace>
+    <AssemblyName>SmartStepGroup</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Deploy Scripts\Ruby\msvcrt-ruby191.dll" />
+    <Content Include="Deploy Scripts\Ruby\ruby.exe" />
+    <Content Include="Deploy Scripts\SQL\Create Change Log Table.sql" />
+    <Content Include="Deploy Scripts\SQL\Database.sql" />
+    <Content Include="Deploy Scripts\SQL\Drop Functions.sql" />
+    <Content Include="Deploy Scripts\SQL\Drop Stored Procedures.sql" />
+    <Content Include="Deploy Scripts\SQL\Drop Triggers.sql" />
+    <Content Include="Deploy Scripts\SQL\Drop Views.sql" />
+    <Content Include="Deploy Scripts\temp.sql" />
+    <Content Include="Schema Changes\1.0\1.0.001.sql" />
+    <Content Include="Schema Changes\1.0\1.0.002.sql" />
+    <Content Include="Schema Changes\1.0\1.0.004.sql" />
+    <Content Include="Schema Changes\1.0\1.0.003.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Deploy Scripts\deploy.cmd" />
+    <None Include="Deploy Scripts\deploy.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\fileutils.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\attlistdecl.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\attribute.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\cdata.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\child.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\comment.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\doctype.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\document.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\dtd\attlistdecl.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\dtd\dtd.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\dtd\elementdecl.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\dtd\entitydecl.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\dtd\notationdecl.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\element.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\encoding.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\encodings\CP-1252.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\encodings\EUC-JP.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\encodings\ICONV.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\encodings\ISO-8859-1.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\encodings\ISO-8859-15.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\encodings\SHIFT-JIS.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\encodings\SHIFT_JIS.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\encodings\UNILE.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\encodings\US-ASCII.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\encodings\UTF-16.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\encodings\UTF-8.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\entity.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\formatters\default.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\formatters\pretty.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\formatters\transitive.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\functions.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\instruction.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\light\node.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\namespace.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\node.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\output.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\parent.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\parseexception.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\parsers\baseparser.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\parsers\lightparser.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\parsers\pullparser.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\parsers\sax2parser.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\parsers\streamparser.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\parsers\treeparser.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\parsers\ultralightparser.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\parsers\xpathparser.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\quickpath.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\rexml.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\sax2listener.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\source.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\streamlistener.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\syncenumerator.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\text.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\undefinednamespaceexception.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\validation\relaxng.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\validation\validation.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\validation\validationexception.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\xmldecl.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\xmltokens.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\xpath.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\rexml\xpath_parser.rb" />
+    <None Include="Deploy Scripts\Ruby\lib\set.rb" />
+    <None Include="deploy_local.cmd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
