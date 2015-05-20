@@ -1,0 +1,12 @@
+<table class="table table-striped" ng-hide="companies.isVisible()">
+    <th>Id</th>
+    <th>Legal Name</th>
+    <th>City</th>
+    <th>State</th>
+    <tr ng-repeat="company in companies.list | orderBy:'legalName'">
+        <td>{{ company.id }}</td>
+        <td>{{ company.legalName| uppercase }}</td>
+        <td>{{ company.city }}</td>
+        <td>{{ company.state }}</td>
+    </tr>
+</table>

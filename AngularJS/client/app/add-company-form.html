@@ -1,0 +1,21 @@
+<form name="addCompanyForm"
+      ng-submit="addCompanyForm.$valid && companies.addCompany(legalName);" novalidate>
+    <div class="form-group">
+        <label for="legalName">Legal name</label>
+        <input type="text" class="form-control"
+               id="legalName"
+               placeholder="Enter legal name"
+               ng-model="companies.legalName" required>
+
+        <label for="city">City</label>
+        <input name="city" type="text" class="form-control" id="city" placeholder="Enter country"
+               ng-model="companies.city" required>
+
+        <label for="state">State</label>
+        <input type="text" class="form-control" id="state" placeholder="Enter state" ng-model="companies.state"
+               required>
+    </div>
+
+    <button type="submit" class="btn btn-success">Add Company</button>
+    <div>Form validation status = {{addCompanyForm.$valid}}</div>
+</form>
